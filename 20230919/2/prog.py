@@ -1,10 +1,9 @@
 sum = 0
-while a := eval(input()):
+while (a := eval(input())) > 0:
 	sum+=a
-else:
-	if a <= 0:
-		print (a)
-	else:
+	if sum > 21:
 		print (sum)
-
+		break
+else:
+	print (a)
 
